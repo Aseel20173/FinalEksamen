@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bright Library</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#">
+        <span class="logo" aria-hidden="true">📘</span>
+        <span class="brand-text">Bright Library</span>
+      </a>
+      <nav aria-label="Huvudmeny">
+        <ul class="nav">
+          <li><a href="#about">Om oss</a></li>
+          <li><a href="#collection">Samling</a></li>
+          <li><a href="#gallery">Galleri</a></li>
+          <li><a href="#visit">Besök</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container grid">
+    <section id="about" class="card">
+      <h2>Om oss</h2>
+      <p>Välkommen till Bright Library – en lugn plats för läsning och upptäckter. Vi erbjuder böcker, tidskrifter och digitala resurser för alla åldrar.</p>
+      <a class="btn" href="#collection">Utforska samlingen</a>
+    </section>
+
+    <section id="collection" class="card">
+      <h2>Vår samling</h2>
+      <ul class="tags">
+        <li>Skönlitteratur</li>
+        <li>Facklitteratur</li>
+        <li>Barnböcker</li>
+        <li>Tidskrifter</li>
+        <li>E-böcker</li>
+      </ul>
+      <div class="features">
+        <div>
+          <h3>Tysta läsrum</h3>
+          <p>Avskilda rum för fokuserad läsning och forskning.</p>
+        </div>
+        <div>
+          <h3>Evenemang</h3>
+          <p>Veckovisa högläsningar, workshops och bokcirklar.</p>
+        </div>
+        <div>
+          <h3>Tillgänglighet</h3>
+          <p>Böcker i storstil och vänlig personal som hjälper.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="card">
+      <h2>Galleri</h2>
+      <div class="slideshow" aria-label="Biblioteksbilder">
+        <div class="slides">
+          <img class="slide" src="images/image.webp" alt="Bokhyllor med naturligt ljus" loading="lazy" />
+          <img class="slide" src="images/image1.webp" alt="Böckers kurvade vägg" loading="lazy" />
+          <img class="slide" src="images/image2.webp" alt="Läsområde med bord" loading="lazy" />
+        </div>
+        <div class="dots" role="tablist" aria-label="Välj bild">
+          <button class="dot is-active" aria-label="Bild 1" aria-selected="true"></button>
+          <button class="dot" aria-label="Bild 2" aria-selected="false"></button>
+          <button class="dot" aria-label="Bild 3" aria-selected="false"></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="visit" class="card">
+      <h2>Besök oss</h2>
+      <p>Biblioteksgatan 123, Kunskapsdistriktet</p>
+      <p>Mån–Lör 9:00–19:00 • +123 456 789</p>
+      <p>E-post: <a href="mailto:library@example.com">library@example.com</a></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div class="footer-brand">
+        <strong>Bright Library</strong>
+        <p class="muted">Läsning, gemenskap och livslångt lärande.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Länkar</h3>
+        <ul>
+          <li><a href="#about">Om oss</a></li>
+          <li><a href="#collection">Samling</a></li>
+          <li><a href="#gallery">Galleri</a></li>
+          <li><a href="#visit">Besök</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Kontakta oss</h3>
+        <form id="contact-form">
+          <label>
+            <span class="sr-only">Din e-post</span>
+            <input type="email" name="email" placeholder="du@example.com" required>
+          </label>
+          <label>
+            <span class="sr-only">Ditt meddelande</span>
+            <textarea name="message" rows="3" placeholder="Skriv ditt meddelande…" required></textarea>
+          </label>
+          <button class="btn" type="submit">Skicka</button>
+          <p class="tiny muted">Endast demo – ingen data sparas.</p>
+        </form>
+      </div>
+    </div>
+    <div class="container copy">
+      <p>© 2025 Bright Library</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
